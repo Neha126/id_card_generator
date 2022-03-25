@@ -16,7 +16,7 @@ document.querySelector(".btn").addEventListener("click", function (e) {
     document.querySelector(".section").innerHTML = Section;
     setTimeout(() => {
       document.getElementById("container").classList.add("flipped");
-    }, 3000);
+    }, 2000);
   } else {
     showError("Please enter valid input...");
   }
