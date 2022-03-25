@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ID CARD</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+  <body>
+    <div id="container" class="container">
+      <div class="container__inner">
+        <div class="card">
+          <div class="top"></div>
+          <div class="form">
+            <form id="myForm">
+              <input id="name1" type="text" placeholder="Name" />
+              <input id="branch1" type="text" placeholder="Branch" />
+              <input id="section1" type="text" placeholder="Section" />
+              <div class="loader">
+                <div class="loading"></div>
+              </div>
+              <div class="butn">
+                <button class="btn">SUBMIT</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="back-card">
+          <div class="top"></div>
+          <div class="image">
+            <img src="https://picsum.photos/100/100" />
+          </div>
+          <div class="intro">
+            <p class="sId"></p>
+            <p class="name"></p>
+            <p class="branch"></p>
+            <p class="section"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/index.js"></script>
+  </body>
+</html>
