@@ -1,12 +1,15 @@
+:root {
+  --bg-color: #4a4a4a;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
-  color: #4e4e4e;
+  color: #000;
 }
 body {
-  background-color: #ececec;
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -31,20 +34,24 @@ body {
 .top {
   height: 10px;
   width: 80px;
-  background: #ececec;
+  background: var(--bg-color);
   margin-top: 10px;
   border-radius: 10px;
   box-shadow: inset -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
   /* border: 3px inset rgba(255, 165, 0); */
 }
-img {
+.image {
+  height: 100px;
+  width: 100px;
   margin-top: 50px;
-  border-radius: 50%;
   margin-bottom: 20px;
+}
+img {
+  border-radius: 50%;
 }
 p {
   font-size: 15px;
   margin-bottom: 15px;
   text-align: justify;
-  color: black;
+  color: #4e4e4e;
 }

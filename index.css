@@ -1,3 +1,6 @@
+:root {
+  --bg-color: #4a4a4a;
+}
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +9,7 @@
   color: #fff;
 }
 body {
-  background-color: #ececec;
+  background-color: var(--bg-color);
 }
 .container {
   height: 100vh;
@@ -29,7 +32,7 @@ body {
 .top {
   height: 10px;
   width: 80px;
-  background: #ececec;
+  background: var(--bg-color);
   margin-top: 10px;
   border-radius: 10px;
   box-shadow: inset -1px 0px 5px 0px rgba(0, 0, 0, 0.75);
@@ -74,7 +77,7 @@ input {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: 10px solid #ececec;
+  border: 10px solid var(--bg-color);
   border-bottom: 10px solid lightskyblue;
   animation: rotate 2s linear infinite;
   border-style: groove;
