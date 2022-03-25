@@ -5,18 +5,17 @@ document.querySelector(".btn").addEventListener("click", function (e) {
   if (valid) {
     document.querySelector(".loading").style.display = "block";
     var val = Math.floor(1000 + Math.random() * 9000);
-    document.querySelector(".sId").textContent = val;
+    localStorage.setItem("sId", val);
     let fullName = document.getElementById("name1").value;
-    document.querySelector(".name").innerHTML = fullName;
+    localStorage.setItem("name", fullName);
 
     let Branch = document.getElementById("branch1").value;
-    document.querySelector(".branch").innerHTML = Branch;
+    localStorage.setItem("branch", Branch);
 
     let Section = document.getElementById("section1").value;
-    document.querySelector(".section").innerHTML = Section;
-    setTimeout(() => {
-      document.getElementById("container").classList.add("flipped");
-    }, 2000);
+    localStorage.setItem("section", Section);
+
+    window.location.href = "/id_card.html";
   } else {
     showError("Please enter valid input...");
   }
